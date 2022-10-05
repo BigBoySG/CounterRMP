@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/anime_bg"
+    android:background="@drawable/resource__"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,6 +14,7 @@
         android:layout_marginTop="24dp"
         android:fontFamily="serif-monospace"
         android:text="Counter"
+        android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="35dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,9 +29,9 @@
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/purple_500"
         android:fontFamily="monospace"
+        android:onClick="minusCounter"
         android:text="-"
         android:textSize="40dp"
-        android:onClick="minusCounter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -42,9 +43,9 @@
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/purple_500"
         android:fontFamily="monospace"
+        android:onClick="plusCounter"
         android:text="+"
         android:textSize="40dp"
-        android:onClick="plusCounter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -57,9 +58,9 @@
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/purple_200"
         android:fontFamily="monospace"
+        android:onClick="zeroCounter"
         android:text="0"
         android:textSize="40dp"
-        android:onClick="zeroCounter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonPlus"
         app:layout_constraintStart_toEndOf="@+id/buttonMinus" />
@@ -71,6 +72,7 @@
         android:layout_marginBottom="32dp"
         android:fontFamily="casual"
         android:text="0"
+        android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="55dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonZero"
